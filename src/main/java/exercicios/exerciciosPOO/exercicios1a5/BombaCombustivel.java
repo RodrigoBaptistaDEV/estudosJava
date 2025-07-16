@@ -1,4 +1,4 @@
-package main.java.exerciciosPOO.exercicios1a5;
+package main.java.exercicios.exerciciosPOO.exercicios1a5;
 
 /*
 3. Crie uma classe para representar uma BombaCombustivel. A classe BombaCombustivel deve conter os

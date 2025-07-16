@@ -1,4 +1,4 @@
-package main.java.Básico.estudoEnum;
+package main.java.JavaGeral.estudoEnum;
 
 // Declaração do enum Mes,
 public enum Mes {

@@ -1,10 +1,5 @@
-package main.java.exerciciosPOO;
+package main.java.exercicios.exerciciosPOO;
 
-import main.java.exerciciosPOO.exercicios1a5.Elevador;
-import main.java.exerciciosPOO.exercicios6a10.Invoice;
-import main.java.exerciciosPOO.exercicios6a10.MyData;
-
-import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;

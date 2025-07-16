@@ -1,4 +1,4 @@
-package main.java.Básico.estudoEnum;
+package main.java.JavaGeral.estudoEnum;
 
 public class ManualEnum {
 }

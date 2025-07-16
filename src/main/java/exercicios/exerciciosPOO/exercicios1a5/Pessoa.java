@@ -1,4 +1,4 @@
-package main.java.exerciciosPOO.exercicios1a5;
+package main.java.exercicios.exerciciosPOO.exercicios1a5;
 
 /*
 1. Crie uma classe para representar uma Pessoa com os atributos privados de nome, data de nascimento e
@@ -15,6 +15,10 @@ public class Pessoa {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.altura = altura;
+    }
+
+    public Pessoa(String nome) {
+        this.nome = nome;
     }
 
     public String getNome(){

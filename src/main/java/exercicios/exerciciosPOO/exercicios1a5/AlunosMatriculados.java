@@ -1,4 +1,4 @@
-package main.java.exerciciosPOO.exercicios1a5;
+package main.java.exercicios.exerciciosPOO.exercicios1a5;
 
 public class AlunosMatriculados {
     private Integer matricula;

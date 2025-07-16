@@ -1,4 +1,4 @@
-package main.java.exerciciosPOO.exercicios1a5;
+package main.java.exercicios.exerciciosPOO.exercicios1a5;
 
 /*
 4. Crie uma classe denominada Elevador para armazenar as informações de um elevador dentro de um

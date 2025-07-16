@@ -1,4 +1,4 @@
-package main.java.Básico;
+package main.java.JavaGeral;
 
 public class LacoRepeticao {
 

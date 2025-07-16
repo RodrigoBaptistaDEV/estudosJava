@@ -1,6 +1,4 @@
-package main.java.exerciciosPOO.exercicios6a10;
-
-import java.util.Objects;
+package main.java.exercicios.exerciciosPOO.exercicios6a10;
 
 public class Invoice {
     private String numeroItem;

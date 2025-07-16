@@ -1,4 +1,4 @@
-package main.java.Básico;
+package main.java.JavaGeral;
 
 public class Operadores {
     public static void main(String[] args) {

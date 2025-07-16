@@ -1,4 +1,4 @@
-package main.java.exerciciosPOO.exercicios1a5;
+package main.java.exercicios.exerciciosPOO.exercicios1a5;
 
 /*
 2. Crie uma classe para implementar uma ContaCorrente. A classe deve possuir os seguintes atributos:

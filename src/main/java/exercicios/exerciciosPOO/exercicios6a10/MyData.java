@@ -1,7 +1,6 @@
-package main.java.exerciciosPOO.exercicios6a10;
+package main.java.exercicios.exerciciosPOO.exercicios6a10;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class MyData {
 

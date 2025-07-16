@@ -1,4 +1,4 @@
-package main.java.Básico;
+package main.java.JavaGeral;
 
 import javax.swing.*;
 import java.util.Scanner;

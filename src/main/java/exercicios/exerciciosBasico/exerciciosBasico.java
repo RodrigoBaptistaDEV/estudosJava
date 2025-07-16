@@ -1,4 +1,4 @@
-package main.java.exerciciosBasico;
+package main.java.exercicios.exerciciosBasico;
 
 import javax.swing.*;
 import java.util.Scanner;
