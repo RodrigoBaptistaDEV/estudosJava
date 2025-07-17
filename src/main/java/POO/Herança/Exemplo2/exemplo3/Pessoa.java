@@ -3,7 +3,7 @@ package main.java.POO.Herança.Exemplo2.exemplo3;
 // nessa mesma linha, vejamos este seguinte exemplo
 // temos uma classe criada normalmente
 
-// aqui queremos criar um objeto pessoa, que tenha como método imprimir no console suas variaveis, os dados da pessoa.
+// aqui queremos criar um objeto pessoa, que tenha como method imprimir no console suas variaveis, os dados da pessoa.
 public class Pessoa {
     private String nome;
     private String cpf;

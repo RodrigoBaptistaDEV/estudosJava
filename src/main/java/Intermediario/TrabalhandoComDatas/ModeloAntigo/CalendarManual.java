@@ -8,10 +8,10 @@ import java.util.TimeZone;
 /**
  * Este manual cobre os conceitos e uso da classe Calendar em Java.
  *
- * A classe Calendar é uma classe abstrata que fornece métodos para
+ * A classe Calendar é uma classe abstrata que fornece methods para
  * converter entre um instante específico no tempo e um conjunto de campos
  * de calendário, como YEAR, MONTH, DAY_OF_MONTH, HOUR, etc.
- * Calendar também fornece métodos para manipulação de data, como adicionar ou subtrair
+ * Calendar também fornece methods para manipulação de data, como adicionar ou subtrair
  * tempo.
  */
 public class CalendarManual {
@@ -19,7 +19,7 @@ public class CalendarManual {
     public static void main(String[] args) {
         // 1. Obtendo uma instância do Calendar
 
-        // Usando o método estático getInstance() para criar um objeto de calendario.
+        // Usando o method estático getInstance() para criar um objeto de calendario.
         Calendar calendar = Calendar.getInstance();
 
         // Exemplo: Exibindo a data e hora atuais

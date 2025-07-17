@@ -3,41 +3,41 @@ package main.java.JavaGeral;
 public class Funcoes {
 
 /*
-Em Java, funções são chamadas de métodos.
-Um método é um bloco de código que realiza uma tarefa específica
+Em Java, funções são chamadas de methods.
+Um method é um bloco de código que realiza uma tarefa específica
 e pode ser reutilizado em diferentes partes do programa.
 */
 
 /*
 
-A declaração completa de um método (função) em Java inclui quatro partes principais:
+A declaração completa de um method (função) em Java inclui quatro partes principais:
 
 1 - Modificador de Acesso:
 
-    Indica a visibilidade do método.
+    Indica a visibilidade do method.
     Pode ser public, private, protected ou deixado em branco (o que significa que tem acesso ao pacote).
-    Isso determina onde o método pode ser acessado.
+    Isso determina onde o method pode ser acessado.
 
 2 - Modificadores de Estado ou Modificadores de Comportamento,:
 
-    Modificadores de Estado ---> Controlam o estado ou a modificação de variáveis e métodos.
+    Modificadores de Estado ---> Controlam o estado ou a modificação de variáveis e methods.
     static: Associa o membro à classe em vez de a instâncias individuais.
-    final: Indica que o membro não pode ser alterado (constante no caso de variáveis, método não pode ser sobrescrito no caso de métodos).
+    final: Indica que o membro não pode ser alterado (constante no caso de variáveis, method não pode ser sobrescrito no caso de methods).
 
-    Modificadores de Comportamento ---> Controlam o comportamento e a implementação dos métodos.
-    abstract: Indica que o método não tem implementação na classe atual e deve ser implementado pelas subclasses.
-    native: Indica que a implementação do método é fornecida em código nativo (fora do Java).
+    Modificadores de Comportamento ---> Controlam o comportamento e a implementação dos methods.
+    abstract: Indica que o method não tem implementação na classe atual e deve ser implementado pelas subclasses.
+    native: Indica que a implementação do method é fornecida em código nativo (fora do Java).
     strictfp: Garante precisão consistente em operações de ponto flutuante.
 
 3- Tipo de Retorno:
 
-    Indica o tipo de dado que o método retorna.
-    Pode ser qualquer tipo de dado válido em Java (int, double, String, etc.) ou void se o método não retornar nenhum valor.
+    Indica o tipo de dado que o method retorna.
+    Pode ser qualquer tipo de dado válido em Java (int, double, String, etc.) ou void se o method não retornar nenhum valor.
 
-4- Nome do Método:
+4- Nome do Method:
 
     O identificador que você escolhe para a função.
-    Deve seguir as convenções de nomenclatura Java. Este é o nome que você usa para chamar o método.
+    Deve seguir as convenções de nomenclatura Java. Este é o nome que você usa para chamar o method.
 
 */
 
@@ -45,41 +45,41 @@ A declaração completa de um método (função) em Java inclui quatro partes pr
 // 1 MODIFICADOR DE ACESSO
 
     void metodoPadrao() {
-        // (Nenhum Modificador): Se nenhum modificador de acesso for especificado, o método pode ser acessado apenas por classes do mesmo pacote.
+        // (Nenhum Modificador): Se nenhum modificador de acesso for especificado, o method pode ser acessado apenas por classes do mesmo pacote.
     }
     public void metodoPublico() {
-        // public: O método pode ser acessado de qualquer lugar.
+        // public: O method pode ser acessado de qualquer lugar.
     }
 
     private void metodoPrivado() {
-        // private: O método só pode ser acessado dentro da própria classe.
+        // private: O method só pode ser acessado dentro da própria classe.
     }
 
     protected void metodoProtegido() {
-        //  protected: O método pode ser acessado por classes do mesmo pacote e por subclasses (mesmo que estejam em pacotes diferentes).
+        //  protected: O method pode ser acessado por classes do mesmo pacote e por subclasses (mesmo que estejam em pacotes diferentes).
     }
 
 // 2 MODIFICADORES DE ESTADO OU COMPORTAMENTO
 
     // conforme cada caracteristica e função especifica.
 
-    // Um método estático pertence à classe, não a instâncias específicas, e pode ser chamado diretamente na classe, sem criar um objeto.
+    // Um method estático pertence à classe, não a instâncias específicas, e pode ser chamado diretamente na classe, sem criar um objeto.
     static void metodoEstatico() {
-        System.out.println("Método estático.");
+        System.out.println("method estático.");
     }
 
-    // um método é marcado como final, ele não pode ser sobrescrito por subclasses.
-    // Isso significa que a implementação do método na classe atual é a versão final e não pode ser modificada nas subclasses.
+    // um method é marcado como final, ele não pode ser sobrescrito por subclasses.
+    // Isso significa que a implementação do method na classe atual é a versão final e não pode ser modificada nas subclasses.
     final void metodoFinal() {
-        // Implementação do método final
+        // Implementação do method final
     }
 
 // 3 TIPO DE RETORNO
 
-    // para métodos não void, é necessário ter uma instrução de return com um valor compatível com o tipo de retorno
+    // para methods não void, é necessário ter uma instrução de return com um valor compatível com o tipo de retorno
     public void exibirMensagem(String mensagem) {
         System.out.println(mensagem);
-        // Não há instrução de retorno, pois o método é void
+        // Não há instrução de retorno, pois o method é void
     }
     public int somarExemplo(int a, int b) {
         return a + b;
@@ -89,34 +89,34 @@ A declaração completa de um método (função) em Java inclui quatro partes pr
 
     /*
     a. CamelCase:
-    Use o estilo CamelCase para nomes de métodos.
+    Use o estilo CamelCase para nomes de methods.
     Comece com uma letra minúscula e capitalize a primeira letra de cada palavra subsequente.
     Exemplo: calcularSaldo, imprimirMensagem.
 
     b. Verbo + Substantivo:
     Dê nomes descritivos que incluam um verbo seguido por um substantivo.
-    Isso ajuda a expressar claramente a ação realizada pelo método.
+    Isso ajuda a expressar claramente a ação realizada pelo method.
     Exemplo: calcularSalario, enviarEmail.
 
     c. Evite Abreviações Excessivas:
-    Evite abreviações excessivas e use nomes significativos que descrevam a funcionalidade do método.
+    Evite abreviações excessivas e use nomes significativos que descrevam a funcionalidade do method.
      Nomes claros aumentam a legibilidade do código. Exemplo: calcularImposto em vez de calcImp.
 
     d.Evite Nomes Genéricos:
     Evite nomes muito genéricos como funcao, processar, etc.
-    Tente ser específico sobre o que o método faz. Exemplo: processarPagamento em vez de processar.
+    Tente ser específico sobre o que o method faz. Exemplo: processarPagamento em vez de processar.
 
     e.Escolha Nomes Intuitivos:
-    Escolha nomes que sejam intuitivos e que forneçam uma boa compreensão da funcionalidade do método.
+    Escolha nomes que sejam intuitivos e que forneçam uma boa compreensão da funcionalidade do method.
     Isso facilita o entendimento do código por outros desenvolvedores.
     */
 
     public void calcularSaldoConta() {
-        // Implementação do método
+        // Implementação do method
     }
 
     public String gerarRelatorioFinanceiro() {
-        // Implementação do método
+        // Implementação do method
         return "Relatório gerado com sucesso.";
     }
 
@@ -179,12 +179,12 @@ A declaração completa de um método (função) em Java inclui quatro partes pr
     // OBS - a utilização do Return
 
         /*
-        O `return` em Java é uma instrução que serve para encerrar a execução de um método e, opcionalmente, retornar um valor.
-        Quando você chama `return` dentro de um método, a execução desse método é interrompida e o controle é devolvido ao ponto onde o método foi chamado.
+        O `return` em Java é uma instrução que serve para encerrar a execução de um method e, opcionalmente, retornar um valor.
+        Quando você chama `return` dentro de um method, a execução desse method é interrompida e o controle é devolvido ao ponto onde o method foi chamado.
         */
 
         /*
-        Se um método tem um tipo de retorno não-`void`, você precisa fornecer um valor de retorno compatível com esse tipo, por exemplo:
+        Se um method tem um tipo de retorno não-`void`, você precisa fornecer um valor de retorno compatível com esse tipo, por exemplo:
         */
 
             public int soma(int a, int b) {
@@ -192,25 +192,25 @@ A declaração completa de um método (função) em Java inclui quatro partes pr
             }
 
         /*
-        Se o método tem tipo de retorno `void`, você pode usar `return` sozinho para simplesmente encerrar a execução do método, sem retornar nenhum valor:
+        Se o method tem tipo de retorno `void`, você pode usar `return` sozinho para simplesmente encerrar a execução do method, sem retornar nenhum valor:
         */
 
             public void olaMundo() {
                 System.out.println("Olá, mundo!");
-                return; // Não está retornando nenhum valor, apenas encerrando a execução do método
+                return; // Não está retornando nenhum valor, apenas encerrando a execução do method
             }
 
 
         /*
-        o return não encerra a execução do programa, ele sai do método e volta pra onde foi chamado.
+        o return não encerra a execução do programa, ele sai do method e volta pra onde foi chamado.
         Se por exemplo não tem nada na função que o chamou, como main(){funçãoChamada()} então o programa é encerrado.
         */
 
         /*
         Ainda, atente-se que:
-        return é uma instrução que encerra a execução do método onde está sendo chamado, não importa onde esteja no método.
+        return é uma instrução que encerra a execução do method onde está sendo chamado, não importa onde esteja no method.
         Uma vez que a execução chega ao return, não importa se está dentro de um switch, um if, um loop ou qualquer outro bloco de código,
-        o método será encerrado imediatamente e o controle será devolvido ao ponto onde o método foi chamado.
+        o method será encerrado imediatamente e o controle será devolvido ao ponto onde o method foi chamado.
         */
 
 }

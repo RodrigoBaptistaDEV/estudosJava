@@ -493,7 +493,7 @@ public class exerciciosBasico {
                 break;
             default:
                 JOptionPane.showMessageDialog(null, "Opção inválida");
-                return; // encerra a execução do método funcao27 retornado nulo.
+                return; // encerra a execução do method funcao27 retornado nulo.
         }
 
         valorDescontado = veiculo * percentual;

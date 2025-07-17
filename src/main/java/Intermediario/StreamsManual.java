@@ -18,7 +18,7 @@ public class StreamsManual {
     public static void main(String[] args) {
         // Vamos começar criando uma lista de exemplo para uso nos exemplos seguintes
         List<String> palavras = Arrays.asList("cachorro", "gato", "elefante", "girafa", "tigre", "leão");
-            // método Arrays.asList obrigatorio pra inicializar a lista diretamente.
+            // method Arrays.asList obrigatorio pra inicializar a lista diretamente.
 
         /*
          * 1. Criação de Streams
@@ -26,7 +26,7 @@ public class StreamsManual {
          * Podemos criar streams de várias formas:
          * a) A partir de coleções (Collection)
          * b) A partir de arrays
-         * c) Usando métodos estáticos como Stream.of()
+         * c) Usando methods estáticos como Stream.of()
          */
 
             // a) Criação a partir de uma coleção
@@ -61,14 +61,14 @@ public class StreamsManual {
                         return s.startsWith("g");
                     }
 
-                // Usando a função no método filter()
+                // Usando a função no method filter()
 
                     Stream<String> streamFiltrada = streamDePalavras.filter(StreamsManual::minhaFuncao);
-                    // ( :: ) referencia de método, indicamos para o filtro que deve aplicar em cada elemento minhaFuncao();
+                    // ( :: ) referencia de method, indicamos para o filtro que deve aplicar em cada elemento minhaFuncao();
 
                 "para cada elemento s da stream, verifique se s começa com 'g'".
 
-                essa expressão lambda é usada como um predicado para o método filter() da stream.
+                essa expressão lambda é usada como um predicado para o method filter() da stream.
 
                 O filter() então usa esse predicado para filtrar os elementos da stream,
                 mantendo apenas aqueles para os quais o predicado retorna true, ou seja, aqueles que começam com 'g'.
@@ -82,11 +82,11 @@ public class StreamsManual {
                 /*
                 .map() é uma operação de stream que permite transformar cada elemento da stream de acordo com uma função especificada.
 
-                String::toUpperCase é o método de referência que estamos passando para o map.
-                toUpperCase() é um método da classe String - converte todas as letras de uma string em maiúsculas.
+                String::toUpperCase é o method de referência que estamos passando para o map.
+                toUpperCase() é um method da classe String - converte todas as letras de uma string em maiúsculas.
 
                 Ao usar String::toUpperCase, estamos essencialmente dizendo ao map que para cada elemento da stream
-                de entrada (no caso, a stream palavras), aplique o método toUpperCase() da classe String a esse elemento.
+                de entrada (no caso, a stream palavras), aplique o method toUpperCase() da classe String a esse elemento.
 
                 Então, se palavras é uma lista de strings, streamMaiusculas conterá uma nova stream onde cada string
                 foi transformada para que todas as letras estejam em maiúsculas.
@@ -109,11 +109,11 @@ public class StreamsManual {
                 List<String> listaFiltrada = streamFiltrada.collect(Collectors.toList());
 
                 /*
-                O método `collect()` é usado para coletar os elementos de um fluxo (stream) em uma coleção ou em outro tipo de estrutura de dados.
+                O method `collect()` é usado para coletar os elementos de um fluxo (stream) em uma coleção ou em outro tipo de estrutura de dados.
                 Ele é uma operação terminal que permite que você converta os elementos de um fluxo em uma forma desejada, como uma lista, um conjunto, um mapa, etc.
-                O método `Collectors.toList()` é um coletor pré-definido que cria uma lista contendo os elementos do fluxo.
-                Quando você passa `Collectors.toList()` como argumento para o método `collect()`, você está instruindo o Java a coletar os elementos do fluxo em uma lista.
-                Em resumo, o método `collect(Collectors.toList())` está coletando os elementos de um fluxo em uma lista. Isso é útil quando você precisa trabalhar com os elementos do fluxo em uma estrutura de lista para posterior manipulação ou processamento.
+                O method `Collectors.toList()` é um coletor pré-definido que cria uma lista contendo os elementos do fluxo.
+                Quando você passa `Collectors.toList()` como argumento para o method `collect()`, você está instruindo o Java a coletar os elementos do fluxo em uma lista.
+                Em resumo, o method `collect(Collectors.toList())` está coletando os elementos de um fluxo em uma lista. Isso é útil quando você precisa trabalhar com os elementos do fluxo em uma estrutura de lista para posterior manipulação ou processamento.
                 */
 
                 /*
@@ -128,7 +128,7 @@ public class StreamsManual {
 
                     /*
                     estamos dizendo para o  para o forEach da stream que, para cada elemento na stream,
-                    chame o método println de System.out e passe o elemento como argumento.
+                    chame o method println de System.out e passe o elemento como argumento.
                     */
 
             // C) Exemplo de uso de count para contar o número de elementos:

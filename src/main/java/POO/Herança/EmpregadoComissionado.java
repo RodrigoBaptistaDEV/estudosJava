@@ -8,7 +8,7 @@ public class EmpregadoComissionado extends Empregado {
     private double unidades;
 
     /*
-    no construtor da classe filha devemos usar o método super.
+    no construtor da classe filha devemos usar o method super.
     Serve para inicializar a superclasse do objeto corretamente antes que a classe filha adicione suas próprias inicializações.
     */
 
@@ -24,7 +24,7 @@ public class EmpregadoComissionado extends Empregado {
         Essa chamada pode ser explícita ou implícita.
         Se você não chamar explicitamente o construtor da superclasse usando super(),
         o compilador Java procurará automaticamente o construtor padrão da superclasse, buscando inserir no construtor da
-        classe filha o método super() sem argumentos, para cumprir portanto a inicialização do construtor da classe pai.
+        classe filha o method super() sem argumentos, para cumprir portanto a inicialização do construtor da classe pai.
 
         dessa maneira, Se a superclasse não tiver usando o construtor padrão (sem argumentos),
         você deve chamar explicitamente um dos construtores criados usando super com os argumentos apropriados.
@@ -96,7 +96,7 @@ public class EmpregadoComissionado extends Empregado {
 
         /*
         o que mostra inclusive porque essa classe deve ser inicializada pelo Super,
-        afinal métodos e variaveis não estáticos podem acessar as variaveis de instancia da classe que precisam ser instanciadas;
+        afinal methods e variaveis não estáticos podem acessar as variaveis de instancia da classe que precisam ser instanciadas;
         */
     }
 

@@ -57,9 +57,9 @@ import java.io.FileReader;
  *
  * Declaração de Exceções:
  * ------------------------
- * Um método pode declarar que lança uma exceção usando a palavra-chave 'throws'.
- * Isso indica que o método pode lançar a exceção, mas não trata diretamente.
- * A responsabilidade de lidar com a exceção é transferida para o método que chamou.
+ * Um method pode declarar que lança uma exceção usando a palavra-chave 'throws'.
+ * Isso indica que o method pode lançar a exceção, mas não trata diretamente.
+ * A responsabilidade de lidar com a exceção é transferida para o method que chamou.
  *
  * Exemplo:
  * public void exemplo() throws MinhaExcecao {
@@ -68,7 +68,7 @@ import java.io.FileReader;
  *
  * Boas Práticas:
  * --------------
- * - Documente claramente quais exceções um método pode lançar.
+ * - Documente claramente quais exceções um method pode lançar.
  * - Não declare exceções desnecessárias apenas para evitar tratamento.
  *
  * Conclusão:
@@ -88,11 +88,11 @@ public class ManualExcecoesJava {
             int resultado = dividir(10, 0);
             System.out.println("Resultado: " + resultado);
         } catch (ArithmeticException e) {
-            System.out.println("Erro ao dividir por zero: " + e.getMessage()); //  método retorna uma mensagem descritiva da exceção.
+            System.out.println("Erro ao dividir por zero: " + e.getMessage()); //  method retorna uma mensagem descritiva da exceção.
         }
     }
 
-    // Exemplo de método que lança uma exceção:
+    // Exemplo de method que lança uma exceção:
     public static int dividir(int a, int b) {
         if (b == 0) {
             throw new ArithmeticException("Divisão por zero não é permitida");
@@ -100,12 +100,12 @@ public class ManualExcecoesJava {
         return a / b;
     }
 
-    // 2) Método que possui especificação, isso obriga ser chamado em um bloco try catch.
+    // 2) method que possui especificação, isso obriga ser chamado em um bloco try catch.
 
     public static void chamador(){
             // se tentasse só exemplo teria o erro de : 'Unhandled exception: main.java.Intermediario.MinhaExcecao'
         try {
-            exemplo(); // Chama o método que lança MinhaExcecao
+            exemplo(); // Chama o method que lança MinhaExcecao
         } catch (ExcecaoPersonal e) {
             // Trata MinhaExcecao
             System.err.println("Erro: " + e.getMessage());
@@ -119,7 +119,7 @@ public class ManualExcecoesJava {
 
     public static void exemploChecked() {
         // Exemplo de Checked Exception:
-            // se declararmos fora do método temos : 'Unhandled exception: java.io.FileNotFoundException'
+            // se declararmos fora do method temos : 'Unhandled exception: java.io.FileNotFoundException'
             try {
                 FileReader file = new FileReader("arquivo.txt");
             } catch (FileNotFoundException e) {

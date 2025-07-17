@@ -27,9 +27,9 @@ public class Tridimensional extends Bidimensional{
         this.coordenada_z = coordenada_z;
     }
 
-    // sobreposição/sobrescrita de código. O método toString por ter o mesmo nome na classe mãe o sobrepõe
-    // Sobrepor um método é conhecido como "redefinir" o método.
-    // Redefinindo um método a filha fornece sua própria implementação personalizada do método.
+    // sobreposição/sobrescrita de código. O method toString por ter o mesmo nome na classe mãe o sobrepõe
+    // Sobrepor um method é conhecido como "redefinir" o method.
+    // Redefinindo um method a filha fornece sua própria implementação personalizada do method.
 
     /*
     public String toString(){
@@ -40,10 +40,10 @@ public class Tridimensional extends Bidimensional{
     }
     */
 
-    // com o método super() podemos ainda acessar os metodos da classe mae
+    // com o method super() podemos ainda acessar os metodos da classe mae
     public String toString(){
         String retorno = super.toString();
-        // significa que rodaremos primeiro o método da mãe.
+        // significa que rodaremos primeiro o method da mãe.
 
         return retorno + "Com mais uma condiçao temos um ponto tridimensional" + "\n" +
                 "minha coordenada X é " + getCoordenada_x() +"\n"+

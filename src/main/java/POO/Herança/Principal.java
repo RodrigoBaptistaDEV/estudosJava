@@ -23,7 +23,7 @@ public class Principal {
 
     - Reutilização de Código:
     A herança permite que uma nova classe reutilize o código já existente em uma classe base.
-    Isso significa que não é necessário escrever novamente os métodos e atributos que já foram definidos na superclasse.
+    Isso significa que não é necessário escrever novamente os methods e atributos que já foram definidos na superclasse.
 
     - Hierarquia e Especialização:
     A herança permite a criação de uma hierarquia de classes, onde as subclasses especializam ou extendem o comportamento

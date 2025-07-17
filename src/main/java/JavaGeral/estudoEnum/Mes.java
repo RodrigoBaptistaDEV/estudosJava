@@ -24,7 +24,7 @@ public enum Mes {
         this.valor = valor;
     }
 
-    // Método público para obter o valor associado à constante do enum
+    // method público para obter o valor associado à constante do enum
     public int getValor() {
         return valor;
     }

@@ -1,6 +1,6 @@
 package main.java.POO.AtributoMetodo;
 
-// ATRIBUTOS E MÉTODOS
+// ATRIBUTOS E methodS
 public class Carro {
     // Atributos da classe Carro
     private String marca;
@@ -18,12 +18,12 @@ public class Carro {
         this.velocidadeAtual = 0; // Inicialmente o carro está parado
     }
 
-    // Método para acelerar o carro
+    // method para acelerar o carro
     public void acelerar(double velocidade) {
         this.velocidadeAtual += velocidade;
     }
 
-    // Método para frear o carro
+    // method para frear o carro
     public void frear(double velocidade) {
         this.velocidadeAtual -= velocidade;
         if (this.velocidadeAtual < 0) {
@@ -31,7 +31,7 @@ public class Carro {
         }
     }
 
-    // Método para exibir o estado atual do carro
+    // method para exibir o estado atual do carro
     public void exibirEstado() {
         System.out.println("Marca: " + this.marca);
         System.out.println("Modelo: " + this.modelo);
@@ -40,14 +40,14 @@ public class Carro {
         System.out.println("Velocidade Atual: " + this.velocidadeAtual + " km/h");
     }
 
-    // Método principal
+    // method principal
 
     /*
     Neste exemplo, a classe Carro possui os atributos marca, modelo, ano, cor e velocidadeAtual.
     Durante a execução do programa, esses atributos podem mudar de valor, refletindo diferentes estados do objeto Carro.
-    Por exemplo, ao chamar os métodos acelerar() e frear(), o valor do atributo velocidadeAtual é alterado,
+    Por exemplo, ao chamar os methods acelerar() e frear(), o valor do atributo velocidadeAtual é alterado,
     demonstrando assim o estado dinâmico do objeto ao longo da execução.
-    O método exibirEstado() mostra o estado atual do carro, exibindo os valores de todos os atributos.
+    O method exibirEstado() mostra o estado atual do carro, exibindo os valores de todos os atributos.
     */
 
 

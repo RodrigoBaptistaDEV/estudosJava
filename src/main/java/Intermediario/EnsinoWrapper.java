@@ -34,12 +34,12 @@ public class EnsinoWrapper {
 
 
 
-// 2. Métodos úteis das classes wrapper
-// As classes wrapper fornecem métodos úteis para manipulação e conversão de dados.
+// 2. methods úteis das classes wrapper
+// As classes wrapper fornecem methods úteis para manipulação e conversão de dados.
 
     String numeroComoString = "123";
 
-    // Convertendo uma string para um tipo primitivo usando métodos das classes wrapper
+    // Convertendo uma string para um tipo primitivo usando methods das classes wrapper
     int numero = Integer.parseInt(numeroComoString);  // Converte a string "123" para o tipo primitivo int
     double numeroDouble = Double.parseDouble("123.45");  // Converte a string "123.45" para o tipo primitivo double
 
@@ -49,13 +49,13 @@ public class EnsinoWrapper {
 
 // 3. Comparação de valores
 // É possível comparar valores primitivos usando operadores de comparação como ==, <, >, etc.
-// Para objetos wrapper, é recomendado o uso de métodos como equals() para comparação de valores.
+// Para objetos wrapper, é recomendado o uso de methods como equals() para comparação de valores.
 
     Integer numero1 = 100;
     Integer numero2 = 100;
 
     public void func1(){
-        if (numero1.equals(numero2)) {  // Utiliza o método equals() para comparar valores de objetos wrapper
+        if (numero1.equals(numero2)) {  // Utiliza o method equals() para comparar valores de objetos wrapper
             System.out.println("Os valores são iguais.");
         } else {
             System.out.println("Os valores são diferentes.");
@@ -101,7 +101,7 @@ public class EnsinoWrapper {
 
 
 // 6. Exemplo de uso de Boolean wrapper
-// A classe Boolean oferece métodos estáticos para trabalhar com valores booleanos.
+// A classe Boolean oferece methods estáticos para trabalhar com valores booleanos.
 
     Boolean verdadeiro = Boolean.TRUE;
     Boolean falso = Boolean.FALSE;

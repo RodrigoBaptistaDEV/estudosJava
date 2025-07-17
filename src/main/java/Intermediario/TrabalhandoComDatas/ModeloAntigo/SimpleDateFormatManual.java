@@ -28,7 +28,7 @@ public class SimpleDateFormatManual {
         System.out.println("Data formatada: " + formattedDate); // Exemplo de saída: "Data formatada: 29/05/2024"
 
         // 3. Analisando Datas (Parsing):
-        // O método parse converte uma String em um objeto Calendar, seguindo o padrão especificado.
+        // O method parse converte uma String em um objeto Calendar, seguindo o padrão especificado.
         String dateInString = "29/05/2024";
         try {
             Calendar parsedDate = Calendar.getInstance();
@@ -54,7 +54,7 @@ public class SimpleDateFormatManual {
         System.out.println("Data detalhada: " + sdf2.format(currentDate)); // Exemplo: "Wednesday, May 29, 2024"
 
         // 5. Tratamento de Erros:
-        // Sempre que utilizamos o método parse, é necessário tratar a possível exceção ParseException.
+        // Sempre que utilizamos o method parse, é necessário tratar a possível exceção ParseException.
         // Isso é importante para evitar que o programa falhe ao tentar analisar uma data inválida.
 
         // 6. Definindo Localização (Locale):
@@ -68,7 +68,7 @@ public class SimpleDateFormatManual {
         // - A partir do Java 8, a classe DateTimeFormatter da API java.time é recomendada para formatação e análise de datas e horas.
 
         // 8. Exemplo Prático:
-        // Vamos criar um método para formatar e analisar datas de forma prática.
+        // Vamos criar um method para formatar e analisar datas de forma prática.
 
         String datePattern = "dd/MM/yyyy";
         String dateString = "15/08/2021";
@@ -81,7 +81,7 @@ public class SimpleDateFormatManual {
         }
     }
 
-    // Método utilitário para formatar e analisar datas
+    // method utilitário para formatar e analisar datas
     public static Calendar formatAndParseDate(String pattern, String dateString) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         Calendar calendar = Calendar.getInstance();

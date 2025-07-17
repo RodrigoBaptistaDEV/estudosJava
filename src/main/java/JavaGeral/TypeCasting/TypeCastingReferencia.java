@@ -40,7 +40,7 @@ package main.java.JavaGeral.TypeCasting;
  * | Casting e Polimorfismo |
  * ---------------------------
  * Através do upcasting, podemos tratar vários objetos diferentes de forma genérica.
- * O Java chama automaticamente os métodos sobrescritos da subclasse durante a execução.
+ * O Java chama automaticamente os methods sobrescritos da subclasse durante a execução.
  *
  * ---------------------------------------------------
  * | Wrappers e a classe Number                      |
@@ -83,7 +83,7 @@ public class TypeCastingReferencia {
         // ========== DOWNCASTING válido ==========
         Animal outroAnimal = new Cachorro(); // objeto é realmente um Cachorro
         Cachorro c = (Cachorro) outroAnimal; // Downcasting explícito
-        c.latir();                           // Acessa método específico de Cachorro
+        c.latir();                           // Acessa method específico de Cachorro
 
         // ========== DOWNCASTING inválido (evitado com instanceof) ==========
         Animal generico = new Animal(); // Objeto genérico

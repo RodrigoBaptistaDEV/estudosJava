@@ -7,7 +7,7 @@ public class Cachorro extends Animal {
         // herdando a classe abstrata animal devemos cumprir seu construtor também.
     }
 
-    // Implementação obrigatória do método abstrato fazerSom
+    // Implementação obrigatória do method abstrato fazerSom
     @Override
     public void fazerSom() {
         System.out.println(getNome() + " faz: Au Au!");

@@ -49,7 +49,7 @@ public class Empregado extends Pessoa {
 
     /*
     Aqui na classe Empregado, imprimimos o dado do Empregado em geral, incluindo seus dados Pessoais
-    Portanto devemos utilizar a palavra Super() para rodar o método da superclasse primeiro,
+    Portanto devemos utilizar a palavra Super() para rodar o method da superclasse primeiro,
     */
 
     /*

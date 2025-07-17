@@ -8,7 +8,7 @@ public class ManualEnum {
  * =======================
  *
  * Este manual explica o conceito de Enums (enumerations) em Java,
- * como declará-los, utilizá-los e os métodos úteis associados a eles.
+ * como declará-los, utilizá-los e os methods úteis associados a eles.
  */
 
 // 1. Declaração básica de um Enum
@@ -53,8 +53,8 @@ class ExemploEnum {
     }
 }
 
-// 3. Métodos úteis em Enums
-// Enums têm métodos integrados úteis como `values()` e `valueOf()`
+// 3. methods úteis em Enums
+// Enums têm methods integrados úteis como `values()` e `valueOf()`
 
 enum Cor {
     VERMELHO, VERDE, AZUL
@@ -73,8 +73,8 @@ class MetodosEnum {
     }
 }
 
-// 4. Enums com construtores, campos e métodos
-// Enums podem ter construtores, campos e métodos como classes normais.
+// 4. Enums com construtores, campos e methods
+// Enums podem ter construtores, campos e methods como classes normais.
 
 enum Tamanho {
     PEQUENO("P"), MEDIO("M"), GRANDE("G");
@@ -86,7 +86,7 @@ enum Tamanho {
         this.abreviacao = abreviacao;
     }
 
-    // Método getter para obter a abreviação
+    // method getter para obter a abreviação
     public String getAbreviacao() {
         return abreviacao;
     }
@@ -102,8 +102,8 @@ class EnumAvancado {
     }
 }
 
-// 5. Sobrescrevendo métodos em Enums
-// Enums podem sobrescrever métodos. O exemplo a seguir mostra como sobrescrever o método `toString()`
+// 5. Sobrescrevendo methods em Enums
+// Enums podem sobrescrever methods. O exemplo a seguir mostra como sobrescrever o method `toString()`
 
 enum Moeda {
     PENNY(1), NICKEL(5), DIME(10), QUARTER(25);
@@ -127,14 +127,14 @@ enum Moeda {
 class EnumComToString {
     public static void main(String[] args) {
         for (Moeda moeda : Moeda.values()) {
-            // Usando o método sobrescrito `toString()`
+            // Usando o method sobrescrito `toString()`
             System.out.println(moeda);
         }
     }
 }
 
-// 6. Enums com métodos abstratos
-// Enums podem ter métodos abstratos que cada constante do Enum deve implementar
+// 6. Enums com methods abstratos
+// Enums podem ter methods abstratos que cada constante do Enum deve implementar
 
 enum Operacao {
     SOMA {
@@ -162,7 +162,7 @@ enum Operacao {
         }
     };
 
-    // Método abstrato que cada constante deve implementar
+    // method abstrato que cada constante deve implementar
     public abstract double executar(double x, double y);
 }
 

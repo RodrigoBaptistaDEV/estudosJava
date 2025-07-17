@@ -12,7 +12,7 @@ public class ArrayListExemplos {
         // [ A ] declarando e instanciando uma agenda de contatos
         ArrayList<String> agenda = new ArrayList();
 
-        // [ B ] usando o método add() para gravar 4 contatos na agenda
+        // [ B ] usando o method add() para gravar 4 contatos na agenda
         agenda.add("Juca Bala;11 1111-1111");
         agenda.add("Marcos Paqueta;22 2222-2222");
         agenda.add("Maria Antonieta;33 3333-3333");
@@ -21,7 +21,7 @@ public class ArrayListExemplos {
         int i;
 
         // [ C ] mostrando os "n" contatos da agenda (usando o índice)
-        // número de elementos da agenda: método size()
+        // número de elementos da agenda: method size()
         System.out.printf("Percorrendo o ArrayList (usando o índice)\n");
         int n = agenda.size();
         for (i=0; i<n; i++) {

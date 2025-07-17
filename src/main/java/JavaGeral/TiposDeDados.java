@@ -53,8 +53,8 @@ public class TiposDeDados {
 	 * mas sim uma referência (ponteiro) para um objeto localizado na memória heap.
 	 *
 	 * Os principais tipos de referência incluem:
-	 * - Classes: estruturas com atributos e métodos definidos pelo programador.
-	 * - Interfaces: contratos de métodos para implementação por classes.
+	 * - Classes: estruturas com atributos e methods definidos pelo programador.
+	 * - Interfaces: contratos de methods para implementação por classes.
 	 * - Arrays: estruturas de dados fixas que armazenam múltiplos elementos.
 	 * - Strings: classe especial que representa sequências de caracteres.
 	 * - Wrappers: versões em objeto dos tipos primitivos (ex: Integer, Double).
@@ -64,7 +64,7 @@ public class TiposDeDados {
 	 * Características gerais:
 	 * - Armazenam endereços de memória, não valores diretamente.
 	 * - Valor padrão: null (quando não inicializados).
-	 * - Permitem o uso de métodos, herança, polimorfismo e encapsulamento.
+	 * - Permitem o uso de methods, herança, polimorfismo e encapsulamento.
 	 * - Necessitam de instanciamento (exceto literais como String).
 	 */
 
@@ -88,11 +88,11 @@ public class TiposDeDados {
 			String nome1 = "Java";
 			Comparable<String> comparador = nome1;
 
-			// Mesmo a variável sendo do tipo da interface, conseguimos usar métodos definidos nela.
+			// Mesmo a variável sendo do tipo da interface, conseguimos usar methods definidos nela.
 		// Nesse caso, compareTo é um method da interface Comparable.
 			int resultado = comparador.compareTo("Kotlin");
 
-		// Isso funciona porque a classe real por trás da interface é String, que implementa esse método.
+		// Isso funciona porque a classe real por trás da interface é String, que implementa esse method.
 		// O resultado será um número negativo, pois "Java" < "Kotlin" em ordem alfabética.
 
 
@@ -202,7 +202,7 @@ public class TiposDeDados {
 	 * |----------------------|-------------------|------------------------------|
 	 * | Armazenamento        | Valor direto       | Endereço p/ objeto na heap   |
 	 * | Pode ser null        | Não                | Sim                          |
-	 * | Possui métodos       | Não                | Sim                          |
+	 * | Possui methods       | Não                | Sim                          |
 	 * | Mutabilidade         | Imutável (fixo)    | Pode ser mutável ou não      |
 	 * | Participa de herança | Não                | Sim                          |
 	 * | Comparação           | == (valor direto)  | == (referência) ou .equals() |

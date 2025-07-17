@@ -1,13 +1,13 @@
 package main.java.POO.Interface;
 /*
-Uma interface em Java define um conjunto de métodos que uma classe concreta deve implementar.
+Uma interface em Java define um conjunto de methods que uma classe concreta deve implementar.
 É uma forma de estabelecer um contrato, onde as classes que implementam a interface concordam
-em fornecer implementações para os métodos declarados na interface.
+em fornecer implementações para os methods declarados na interface.
 */
 interface Forma {
-    // Método para calcular a área
+    // method para calcular a área
     double calcularArea();
 
-    // Método para calcular o perímetro
+    // method para calcular o perímetro
     double calcularPerimetro();
 }

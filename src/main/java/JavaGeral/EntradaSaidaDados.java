@@ -9,7 +9,7 @@ public class EntradaSaidaDados {
 
 	// SCANNER
 
-		// Método Scanner:
+		// method Scanner:
 		// 1. Criar um objeto da classe Scanner passando como parametro "System.in".
 		// 2. Criar variável que receberá o valor escaneado.
 		// 3. Saída pelo println.
@@ -26,18 +26,18 @@ public class EntradaSaidaDados {
 		Na entrada,
 		Criamos um objeto da classe Scanner, passando para seu construtor um input stream como requisitado.
 		Esse input stream é a variavel de instancia/atributo "in" da classe System.
-		Com o objeto criado, conseguimos acessar o método next() para armazenar em uma variavel o valor capturado.
+		Com o objeto criado, conseguimos acessar o method next() para armazenar em uma variavel o valor capturado.
 
 		Na saida,
-		A expressão 'System.out.println' é uma chamada ao método println do objeto out, que é uma instância da classe PrintStream.
-		O método println é usado para imprimir uma linha de texto no console.
-		Estamos chamando o método println do objeto out da classe System.
+		A expressão 'System.out.println' é uma chamada ao method println do objeto out, que é uma instância da classe PrintStream.
+		O method println é usado para imprimir uma linha de texto no console.
+		Estamos chamando o method println do objeto out da classe System.
 		*/
 
 
 	// JOPTIONPANE
 
-		// Método JOptionPane:
+		// method JOptionPane:
 		// 1. Armazenar o input em uma variável.
 		// 2. Saída de dados por painel de mensagem.
 

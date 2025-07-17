@@ -12,16 +12,16 @@ public class TestePolimorfismo {
         meuAnimal.fazerSom();  // Saída: Gato faz: Miau!
 
         /*
-        Polimorfismo aplicado ( Objeto + método) :
+        Polimorfismo aplicado ( Objeto + method) :
         capacidade de objetos de diferentes classes derivadas serem tratados como objetos de uma classe base comum,
-        e a chamada aos métodos serem resolvidas em tempo de execução com base na classe real do objeto.
+        e a chamada aos methods serem resolvidas em tempo de execução com base na classe real do objeto.
 
         uma referência do tipo de uma classe mãe pode apontar para uma instância de uma classe filha.
-        O método específico que será chamado é determinado em tempo de execução com base na instância real do objeto.
+        O method específico que será chamado é determinado em tempo de execução com base na instância real do objeto.
         */
 
         /*
-        Graças ao polimorfismo, quando você chama gato.fazerSom(), o método fazerSom() da classe Gato é chamado,
+        Graças ao polimorfismo, quando você chama gato.fazerSom(), o method fazerSom() da classe Gato é chamado,
         mesmo que a referência gato seja do tipo Animal.
         O Java determina, em tempo de execução, que a implementação de fazerSom() da classe Gato deve ser chamada:
         */

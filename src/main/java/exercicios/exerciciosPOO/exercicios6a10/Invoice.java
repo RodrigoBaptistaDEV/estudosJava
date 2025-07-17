@@ -26,7 +26,7 @@ public class Invoice {
         }
     }
 
-    // Métodos Getters
+    // methods Getters
     public String getNumeroItem() {
         return numeroItem;
     }
@@ -43,7 +43,7 @@ public class Invoice {
         return precoUnitario;
     }
 
-    // Métodos Setters
+    // methods Setters
     public void setNumeroItem(String numeroItem) {
         this.numeroItem = numeroItem;
     }
@@ -70,7 +70,7 @@ public class Invoice {
         }
     }
 
-    // Método para calcular o valor total da fatura
+    // method para calcular o valor total da fatura
     public double getInvoiceAmount() {
         return quantidade * precoUnitario;
     }

@@ -12,16 +12,16 @@ public class GenericsManual {
     /*
       Definição de Generics
 
-      Generics permitem a criação de classes, interfaces e métodos que operam com tipos
+      Generics permitem a criação de classes, interfaces e methods que operam com tipos
       específicos, permitindo reutilização de código com tipos variados.
 
-      Quando você define uma classe ou método com Generics em Java,
+      Quando você define uma classe ou method com Generics em Java,
       o tipo especificado entre os sinais de menor e maior (<>) é substituído pelo tipo real
-      quando você instancia a classe ou chama o método.
+      quando você instancia a classe ou chama o method.
 
       Essa substituição ocorre em tempo de compilação e é conhecida como "type erasure" (apagamento de tipo).
       Durante a compilação, o compilador remove as informações sobre os tipos genéricos, substituindo-os pelos tipos reais
-      conforme especificado na instância da classe ou na chamada do método.
+      conforme especificado na instância da classe ou na chamada do method.
 
      */
 
@@ -29,7 +29,7 @@ public class GenericsManual {
       Sintaxe Básica
 
       A declaração de um tipo genérico é feita utilizando o símbolo "<>" após o nome da classe,
-      interface ou método, seguido do nome do tipo genérico.
+      interface ou method, seguido do nome do tipo genérico.
 
       Exemplo:
 
@@ -79,9 +79,9 @@ public class GenericsManual {
                 System.out.println(item);
             }
         }
-        A assinatura do método imprimirLista utiliza um wildcard <?>.
-        Isso significa que o método pode receber uma lista de qualquer tipo.
-        Dentro do método, o loop for itera sobre os elementos da lista, tratando-os como objetos (Object),
+        A assinatura do method imprimirLista utiliza um wildcard <?>.
+        Isso significa que o method pode receber uma lista de qualquer tipo.
+        Dentro do method, o loop for itera sobre os elementos da lista, tratando-os como objetos (Object),
         já que o tipo exato dos elementos é desconhecido.
 
      */

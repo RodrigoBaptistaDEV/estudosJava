@@ -10,7 +10,7 @@ public class DateTimeFormatterManual {
         // Criando um objeto LocalDateTime
         LocalDateTime agora = LocalDateTime.now();
 
-        // Criando um objeto DateTimeFormatter usando o método ofPattern
+        // Criando um objeto DateTimeFormatter usando o method ofPattern
         DateTimeFormatter formatoPersonalizado = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
         // Formatando a data e hora usando o formato personalizado

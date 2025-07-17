@@ -1,9 +1,9 @@
 package main.java.POO.Construtor;
 
 /*
-   Um construtor em Java é um método especial que é chamado automaticamente quando um objeto de uma classe é instanciado.
+   Um construtor em Java é um method especial que é chamado automaticamente quando um objeto de uma classe é instanciado.
    Ele é usado para inicializar os objetos.
-   É um método sem retorno que tem o mesmo nome da classe.
+   É um method sem retorno que tem o mesmo nome da classe.
 
    Vamos abordar os seguintes pontos:
 
@@ -66,14 +66,14 @@ public class Celular {
         this.ano = ano;
     }
 
-    // Método para imprimir os detalhes do carro
+    // method para imprimir os detalhes do carro
     public void imprimirDetalhes() {
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
         System.out.println("Ano: " + ano);
     }
 
-    // Método main para testar a classe Carro
+    // method main para testar a classe Carro
     public static void main(String[] args) {
         // instanciando objetos a partir da classe 'Carro'
 

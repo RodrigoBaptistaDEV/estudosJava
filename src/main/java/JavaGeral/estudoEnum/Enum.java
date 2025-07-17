@@ -13,9 +13,9 @@ public class Enum {
     Na prática, um ENUM em Java é de fato uma classe especial que armazena um conjunto de valores constantes.
     São tipos de dados definidos globalmente em uma classe ou em um arquivo separado.
 
-    Você não pode declarar um ENUM dentro de um método como faria com uma variável.
+    Você não pode declarar um ENUM dentro de um method como faria com uma variável.
     ENUMS em Java são definidos em nível de classe, o que significa que eles são membros de uma classe e podem
-    ser acessados por todos os métodos dessa classe (e por outras classes, se forem públicos ou protegidos).
+    ser acessados por todos os methods dessa classe (e por outras classes, se forem públicos ou protegidos).
     */
 
     // EXEMPLO 1
@@ -74,7 +74,7 @@ public class Enum {
 
     /*
     Se você deseja associar valores a cada constante em um ENUM, você deve definir atributos para armazenar esses valores
-    e um construtor para inicializá-los. Em seguida, pode adicionar métodos para acessar esses valores.
+    e um construtor para inicializá-los. Em seguida, pode adicionar methods para acessar esses valores.
     */
     // Escolhendo o mês de fevereiro
     public void testeFuncao(){

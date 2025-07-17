@@ -9,13 +9,13 @@ public class Circulo implements Forma{
         this.raio = raio;
     }
 
-    // Implementação do método para calcular a área do círculo
+    // Implementação do method para calcular a área do círculo
     @Override
     public double calcularArea() {
         return Math.PI * raio * raio;
     }
 
-    // Implementação do método para calcular o perímetro do círculo
+    // Implementação do method para calcular o perímetro do círculo
     @Override
     public double calcularPerimetro() {
         return 2 * Math.PI * raio;

@@ -6,7 +6,7 @@ public class Gato extends Animal{
         super(nome);
     }
 
-    // Implementação do método abstrato fazerSom
+    // Implementação do method abstrato fazerSom
     @Override
     public void fazerSom() {
         System.out.println(getNome() + " faz: Miau!");
