@@ -178,3 +178,111 @@ class EnumComMetodoAbstrato {
     }
 }
 
+// 7. Associação de valores personalizados a constantes de enum
+// =============================================================
+// Cada constante do enum pode carregar valores (como um número, texto ou outro enum).
+// Isso é feito com campos, um construtor e um getter.
+
+enum DiasDaSemana {
+    SEGUNDA(1),
+    TERCA(2),
+    QUARTA(3),
+    QUINTA(4),
+    SEXTA(5),
+    SABADO(6),
+    DOMINGO(7);
+
+    private final int valor;
+
+    // Construtor personalizado
+    DiasDaSemana(int valor) {
+        this.valor = valor;
+    }
+
+    // Getter para acessar o valor associado
+    public int getValor() {
+        return valor;
+    }
+}
+
+class UsoDiasDaSemana {
+    public static void main(String[] args) {
+        // Acessando constantes com valores associados
+        System.out.println("Valor de SEGUNDA: " + DiasDaSemana.SEGUNDA.getValor());
+        System.out.println("Valor de SEXTA: " + DiasDaSemana.SEXTA.getValor());
+    }
+}
+
+// 8. methods concretos e sobrescritos por constante no enum
+// =========================================================
+// Um enum pode definir methods concretos com comportamento padrão.
+// Cada constante pode opcionalmente sobrescrevê-los se necessário.
+
+enum OperacaoMatematica {
+    SOMA {
+        @Override
+        public double executar(double a, double b) {
+            return a + b;
+        }
+
+        @Override
+        public String descricao() {
+            return "Adição";
+        }
+    },
+    SUBTRACAO {
+        @Override
+        public double executar(double a, double b) {
+            return a - b;
+        }
+
+        @Override
+        public String descricao() {
+            return "Subtração";
+        }
+    },
+    MULTIPLICACAO {
+        @Override
+        public double executar(double a, double b) {
+            return a * b;
+        }
+
+        @Override
+        public String descricao() {
+            return "Multiplicação";
+        }
+    },
+    DIVISAO {
+        @Override
+        public double executar(double a, double b) {
+            return b != 0 ? a / b : Double.NaN;
+        }
+
+        @Override
+        public String descricao() {
+            return "Divisão";
+        }
+    };
+
+    // method abstrato que cada constante deve implementar
+    public abstract double executar(double a, double b);
+
+    // method concreto com comportamento padrão
+    public String descricao() {
+        return "Operação matemática genérica";
+    }
+}
+
+class TesteOperacoes {
+    public static void main(String[] args) {
+        double x = 10.0;
+        double y = 2.0;
+
+        // Percorrendo cada operação e executando
+        for (OperacaoMatematica op : OperacaoMatematica.values()) {
+            System.out.printf("%s: %.2f - %s%n", op, op.executar(x, y), op.descricao());
+        }
+    }
+}
+
+

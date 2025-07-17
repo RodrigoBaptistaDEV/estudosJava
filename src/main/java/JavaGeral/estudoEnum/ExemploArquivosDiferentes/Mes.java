@@ -1,4 +1,4 @@
-package main.java.JavaGeral.estudoEnum;
+package main.java.JavaGeral.estudoEnum.ExemploArquivosDiferentes;
 
 // Declaração do enum Mes,
 public enum Mes {

@@ -1,6 +1,6 @@
 package main.java.JavaGeral;
 
-import main.java.JavaGeral.estudoEnum.Enum.DiaDaSemana;
+import main.java.JavaGeral.estudoEnum.ExemploArquivosDiferentes.Enum.DiaDaSemana;
 import main.java.exercicios.exerciciosPOO.exercicios1a5.Pessoa;
 
 import java.util.*;
